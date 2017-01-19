@@ -1,6 +1,6 @@
 /* CLIENT-SPECIFIC STYLES */
 body, table, td, a{-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;} /* Prevent WebKit and Windows mobile changing default text sizes */
-table, td{mso-table-lspace: 0pt; mso-table-rspace: 0pt;} /* Remove spacing between tables in Outlook 2007 and up */
+table, td {border-collapse:collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;} /* Remove spacing between tables in Outlook 2007 and up */
 img{-ms-interpolation-mode: bicubic;} /* Allow smoother rendering of resized image in Internet Explorer */
 /* ANDROID CENTER FIX */
 div[style*="margin: 16px 0;"] { margin: 0 !important; }	
@@ -28,7 +28,6 @@ a[x-apple-data-detectors] {
 .ExternalClass { width:100%;}
 /* Overwrite Outlook.com’s Embedded CSS */
 .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td {line-height: 100%;} .ExternalClass div{line-height: 100%;}
-table {border-collapse:separate;}
 a, a:link, a:visited {text-decoration: none; color: #000;} a:hover {text-decoration: none;} h2,h2 a,h2 a:visited,h3,h3 a,h3 a:visited,h4,h5,h6,.t_cht {color:#000 !important;}
 /* View in browser link */
 #outlook a { padding: 0; }
