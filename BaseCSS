@@ -24,6 +24,7 @@
 *[class*=hauto] { height:auto!important;} 
 *[class*=cntr] { text-align: center!important; float:none!important; margin:auto!important;} 
 *[class*=inline] { display:inline-block!important;} 
+*[class*=inlineTable] { display:inline-table!important;} 
 *[class*=block] { display:block!important;} 
 *[class*=tabledisplay] {display: table!important;} 
 *[class*=tableheader] {display: table-header-group!important;} 
