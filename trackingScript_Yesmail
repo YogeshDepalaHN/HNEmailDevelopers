@@ -1,0 +1,20 @@
+<!--POST
+
+var d = new Date();
+var day = d.getDate();
+var month = d.getMonth()+1;
+var year = d.getFullYear();
+if(month <= 9) {
+month = "0" + month;
+}
+if(day <= 9) {
+day = "0" + day;
+}
+var datestamp = year +""+ month +""+ day;
+var campaign = datestamp;
+var medium = ""; //populate with main subject of email e.g. food, beauty, newin, accessories, editorial, newsletter, paid. Please reference to wiki section/ excel sheet for tracking naming conventions.
+var content = ""; //populate this with more detail e.g restaurant_location, brandname, mens, womens etc. Please reference to excel sheet or wiki page for more naming conventions.
+var content_campaign = content+"_"+campaign;
+var trackingurl="utm_source=email&utm_medium="+medium+"&utm_content="+content+"&utm_campaign="+campaign+"&_$ja=tsid:35862|cgn:"+medium+"|kw:"+content_campaign+"~"+mmid+"&id="+userId;
+
+POST-->
