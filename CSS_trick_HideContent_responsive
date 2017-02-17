@@ -1,0 +1,17 @@
+// the css style needed to activate the hide/ show content on desktop/mobile
+<style>
+@media all and (max-device-width: 480px) {
+*[class*="mobile-only"] {
+            display: block !important;
+            max-height: none !important;
+      }
+}
+</style>
+
+
+//HTML code here
+<!--[if !mso]><!-->
+<div class="mobile-only" style="font-size: 0; max-height: 0; overflow: hidden; display: none; mso-hide: all">
+      <!--// Everything inside is invisible to desktop //-->
+</div>
+<!--<![endif]-->
