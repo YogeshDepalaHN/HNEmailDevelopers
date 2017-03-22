@@ -1,0 +1,55 @@
+// CATEGORY PREFERENCE OPTIONS //
+
+WOMENSWEAR
+MENSWEAR
+LINGERIE
+BEAUTY
+ACCESSORIES
+FOOD
+WINE
+
+// DECLARE VARIABLE //
+
+var category_preference=user.attr("category_preference");
+
+var WOMENSWEAR=0;  
+var MENSWEAR=0;	
+var LINGERIE=0;	
+var BEAUTY=0;	
+var ACCESSORIES=0;
+var FOOD=0;		
+var WINE=0;
+
+
+// DEFINE VARIABLES FOR MULTI SELECTION
+
+if(category_preference){
+WOMENSWEAR = check_bit_set(category_preference,1 << 0,"WOMENSWEAR");
+MENSWEAR = check_bit_set(category_preference,1 << 1,"MENSWEAR");
+LINGERIE = check_bit_set(category_preference,1 << 2,"LINGERIE");
+BEAUTY = check_bit_set(category_preference,1 << 3,"BEAUTY");
+ACCESSORIES = check_bit_set(category_preference,1 << 4,"ACCESSORIES");
+FOOD = check_bit_set(category_preference,1 << 5,"FOOD");
+WINE = check_bit_set(category_preference,1 << 6,"WINE");
+}
+
+
+// USE OF SCRIPT IN CODE //
+
+// OPTION 1 - use all options, OR or AND's to dictate the content //
+
+<!--POST if (category_preference == "BEAUTY" || category_preference == "WOMENSWEAR" || category_preference == "MENSWEAR" || category_preference == "LINGERIE" || category_preference == "ACCESSORIES" || category_preference == "FOOD" || category_preference == "WINE"){ POST-->
+
+CONTENT
+
+<!--POST } POST-->
+
+
+// OPTION 2  - use all options, OR or AND's to dictate the content. 1 = true and 0 = false //
+
+
+<!--POST if (BEAUTY == 1 || WOMENSWEAR == 1 || MENSWEAR == 1 || LINGERIE == 1 || ACCESSORIES == 1 || FOOD == 1 || WINE == 1){ POST-->
+
+CONTENT
+
+<!--POST } POST-->
