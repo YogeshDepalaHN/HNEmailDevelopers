@@ -1,4 +1,4 @@
-// EMAIL PREFERENCE OPTIONS //
+/* EMAIL PREFERENCE OPTIONS */
 
 ALL
 NEW
@@ -7,7 +7,7 @@ STORE
 PROMOTION
 RESTAURANT
 
-// DECLARE VARIABLE //
+/* DECLARE VARIABLE */
 
 var email_preference=user.attr("email_preference");
 
@@ -17,9 +17,22 @@ var TREND=0;
 var STORE=0;	
 var PROMOTION=0;
 var RESTAURANT=0;
+var email_preference_count =0;
 
+/* COUNT MULTI SELECTIONS FOR PREFERENCES */
 
-// DEFINE VARIABLES FOR MULTI SELECTION //
+function check_bit_set(multivalue, mask, stringvalue){
+     if(stringvalue == "ALL" || stringvalue == "NEW" || stringvalue == "TREND" || stringvalue == "STORE" || stringvalue == "PROMOTION" || stringvalue == "RESTAURANT")
+        {
+                if ((multivalue & mask)||(multivalue.indexOf(stringvalue)!=-1)) 
+                {
+                     email_preference_count = email_preference_count + 1;
+                 }
+           return email_preference_count; 
+        }
+  }
+
+/* DEFINE VARIABLES FOR MULTI SELECTION */
 
 if(email_preference){
 ALL = check_bit_set(email_preference,1 << 0,"ALL");
@@ -31,9 +44,9 @@ RESTAURANT = check_bit_set(email_preference,1 << 5,"RESTAURANT");
 }
 
 
-// USE OF SCRIPT IN CODE //
+/* USE OF SCRIPT IN CODE */
 
-// OPTION 1 - use all options, OR or AND's to dictate the content //
+/* OPTION 1 - use all options, OR or AND's to dictate the content */
 
 <!--POST if (email_preference == "ALL" || email_preference == "NEW" || email_preference == "TREND" || email_preference == "STORE" || email_preference == "PROMOTION" || email_preference == "RESTAURANT"){ POST-->
 
@@ -42,10 +55,20 @@ CONTENT
 <!--POST } POST-->
 
 
-// OPTION 2  - use all options, OR or AND's to dictate the content. 1 = true and 0 = false //
+/* OPTION 2  - use all options, OR or AND's to dictate the content. 1 = true and 0 = false */
 
 
 <!--POST if (ALL == 1 || NEW == 1 || TREND == 1 || STORE == 1 || PROMOTION == 1 || RESTAURANT == 1){ POST-->
+
+CONTENT
+
+<!--POST } POST-->
+
+
+/* OPTION 3  - use all options, OR or AND's to dictate the content. This example is with count function in place */
+
+
+<!--POST if (email_preference_count > 1 ){ POST-->
 
 CONTENT
 
