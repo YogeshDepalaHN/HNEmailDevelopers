@@ -1,8 +1,4 @@
-
 <style type="text/css">
-
-
-
 @media screen and (max-width: 640px) { 
 *[class*="mobile-only"] { display: block !important; max-height: none !important; }
 *[class=nomob] { display:none!important;} 
@@ -15,8 +11,8 @@
 *[class*=w70] { width:70%!important; height:auto!important;} 
 *[class*=w65] { width:65%!important; height:auto!important;} 
 *[class*=w60] { width:60%!important; height:auto!important;}
-*[class*=w50] { width:50%!important; height:auto!important;} 
 *[class*=w55] { width:55%!important; height:auto!important;} 
+*[class*=w50] { width:50%!important; height:auto!important;} 
 *[class*=w45] { width:45%!important; height:auto!important;}
 *[class*=w40] { width:40%!important; height:auto!important;} 
 *[class*=fleft] { float:left!important;} 
@@ -24,7 +20,6 @@
 *[class*=hauto] { height:auto!important;} 
 *[class*=cntr] { text-align: center!important; float:none!important; margin:auto!important;} 
 *[class*=inline] { display:inline-block!important;} 
-*[class*=inlineTable] { display:inline-table!important;} 
 *[class*=block] { display:block!important;} 
 *[class*=tabledisplay] {display: table!important;} 
 *[class*=tableheader] {display: table-header-group!important;} 
@@ -54,7 +49,57 @@
 *[class*=ocFFF] { outline-color:#FFFFFF!important;} 
 *[class*=oc000] { outline-color:#000000!important;}
 *[class*=ebebeb] { outline-color:#ebebeb!important;} 
+*[class*=bg999999] { background-color:#999999!important;} 
 *[class*=height1] { height:1px!important} 
-*[id=nav] table td img{ width:100%!important; height:auto!important;} }
+*[class*=inlineTable] { display:inline-table!important;} 
+*[id=nav] table td img{ width:100%!important; height:auto!important;}
+}
+
+/* Loyalty ticker banner specific CSS */
+
+@media screen and (max-width: 640px) {
+*[class*=loynoshow] { display:none!important;}
+*[class*=margB25neg] img { margin-bottom:-25px!important;}
+*[class*=loypadTB5] { padding:5px 0px!important;}
+*[class*=loypadLR50per]{ padding:10px 0px!important;}
+*[class*=loyfontHN1]{ font-size:14px!important; letter-spacing:0.1em!important;}
+*[class*=loyfontHN2]{font-size:14px!important; letter-spacing:0.15em!important;}
+
+ }
+
+@media screen and (max-width: 600px) { 
+*[class*=loynoshow]{ display:none!important;}
+*[class*=loyrewardsLogo] { width:50%!important; height:auto!important;}
+*[class*=loyrewardsArrow]{ width:120%!important; height:auto!important}
+*[class*=loypadLR50per] img{ float:right!important; padding-right:5px!important}
+*[class*="loymobileonly"] { display: block !important;  max-height: none !important; font-size:inherit!important; float:right!important;}
+*[class*="padT3per"] { padding-top:3%!important;}
+*[class*=bordB0] { border-bottom:0px!important;}
+}
+
+@media screen and (max-width: 414px) { 
+*[class*="padT3per"] { padding-top:3%!important;}
+*[class*="padR2per"] { padding-right:2%!important;}
+
+}
+@media screen and (max-width: 375px) {
+	*[class*="padR2per"] { padding-right:0!important;}
+*[class*="padT3per"] { padding-top:2%!important;}
+*[class*=loyfontHN1]{ font-size:13px!important; letter-spacing:0.1em!important;}
+*[class*=loyfontHN2]{font-size:13px!important; letter-spacing:0.15em!important;}
+*[class*=loypointsimgpoints]{ width:auto!important; height:13px!important;}
+*[class*=loypointsimgTier]{ width:auto!important; height:13px!important;}
+*[class*=w48]{ width:48%!important; height:auto!important; margin-right:2%!important;}
+
+}
+
+@media screen and (max-width: 374px) { 
+*[class*="loymobileonly"] { width:100%!important; float:none!important; margin:auto!important; overflow:visible!important; }
+*[class*="loypointstbl"] { margin:5px 0px!important;}
+*[class*=loyrewardsArrow]{ display:none!Important}
+*[class*=loyrewardsLogo]{ width:100%!important; height:auto!important;}
+*[class*=loypadLR50per] img{ float:none!important; padding-right:0px!important; width:60%!important; height:auto!important}
+*[class*=w48]{ width:50%!important; height:auto!important; margin-right:auto!important;}
+}
 
 </style>
