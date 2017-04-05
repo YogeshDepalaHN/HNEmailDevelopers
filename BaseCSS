@@ -55,6 +55,13 @@
 *[id=nav] table td img{ width:100%!important; height:auto!important;}
 }
 
+/*RESTAURANT specific */
+@media screen and (max-width: 413px) { 
+*[id=story] table[class=w50] { width:100%!important;}
+*[id=story] table[class=w50]:nth-child(1) { margin-bottom:10px!important;}
+}
+
+
 /* Loyalty ticker banner specific CSS */
 
 @media screen and (max-width: 640px) {
@@ -76,6 +83,7 @@
 *[class*="padT3per"] { padding-top:3%!important;}
 *[class*=bordB0] { border-bottom:0px!important;}
 }
+
 
 @media screen and (max-width: 414px) { 
 *[class*="padT3per"] { padding-top:3%!important;}
