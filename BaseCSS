@@ -24,6 +24,7 @@
 *[class*=tabledisplay] {display: table!important;} 
 *[class*=tableheader] {display: table-header-group!important;} 
 *[class*=tablefooter] {display: table-footer-group!important;} 
+*[class*=tablecontents] {display: contents!important;} 
 *[class*=bgFFFFFF] { background-color:#FFFFFF!important;} 
 *[class*=font100]{ font-size:100%!important;} 
 *[class*=font90]{ font-size:90%!important;} 
